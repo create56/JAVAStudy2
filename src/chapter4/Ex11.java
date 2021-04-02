@@ -31,7 +31,7 @@ public class Ex11 {
 		while (iterator.hasNext()) {
 			String key = iterator.next();
 			
-			System.out.println(key +" =" +hashMap.get(key));
+			System.out.println(key + "=" +hashMap.get(key));
 		}
 
 	}

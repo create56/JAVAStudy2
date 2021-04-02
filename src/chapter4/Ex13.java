@@ -1,7 +1,9 @@
 package chapter4;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 
 public class Ex13 {
 	public static void main(String[] args) {
@@ -17,6 +19,16 @@ public class Ex13 {
 		customerList.put("ȫ�浿", customer3);
 		customerList.put("ȫ�浿", customer4);
 		customerList.put("ȫ�浿", customer5);
-	}	
+		
+		Set<String>keySet = customerList.keySet();
+		for (String key : keySet) {
+			Cutomer c = customerList.get(key);
+			System.out.println(c.getTel());
+			System.out.println(c.getPaymentMethod());
+		}
+		
+	
+		
+	}	 
 		
 }
