@@ -29,6 +29,7 @@ public enum BirthMonth {
 			
 			if (month.equals(korMonth)) {
 				result = birthMonth;
-			}
-	}
+		}
+	 }
+  }
 }
