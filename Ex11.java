@@ -21,10 +21,15 @@ import java.io.FileNotFoundException; class Ex11 {
 			
 			String line = "";
 			for (int i = 1; line != null; i++) {
+				// line -> 입력 스트림에서 읽어온 한 줄의 문자열이 있음
 				line =br.readLine();
+				
+				// line -> 
 				
 				bw.write(i + " : " + line );
 			}
+			
+			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 			
