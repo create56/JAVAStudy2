@@ -19,12 +19,12 @@ public class Ex16 {
 			String fileName = files[i].getName();
 			
 			if (file.isDirectory()) {
-				filename = "[" + filename + "]";
+				fileName = "[" + fileName + "]";
 				dirNum++;
 			} else {
 				fileNum++;
 			}
-			System.out.println(filename);
+			System.out.println(fileName);
 			
 		}
 		Map<String, Integer> count = new HashMap<>();
@@ -42,7 +42,7 @@ public class Ex16 {
 			
 		}
 		System.out.println(dir.getAbsolutePath() + "디렉토리");
-		Map<String, Integer> count = printFileList(dir);
+		Map<String, Integer> count = pintFileList(dir);
 		
 		System.out.println("총 :" +count.get("fileNum") + "개의 파일");
 		System.out.println("총 :" +count.get("dirNum") + "개의 디렉토리");
